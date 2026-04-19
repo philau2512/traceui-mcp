@@ -1,0 +1,80 @@
+# Các thư mục và file liên quan đến Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.npm
+dist
+
+# Các file môi trường và cấu hình
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+config/local.js
+config.js
+application.properties
+
+# Logs
+logs
+*.log
+
+# Các thư mục và file liên quan đến IDE/Editor
+.idea/
+.vscode/
+.agent/
+.cursor/
+*.swp
+*.swo
+.DS_Store
+.history/
+.cache/
+
+# Các thư mục tạm thời
+tmp/
+temp/
+coverage/
+.nyc_output/
+
+# Bỏ qua hình ảnh (trừ những hình trong public/images)
+*.jpg
+*.jpeg
+*.gif
+!public/images/**
+
+# Bỏ qua tài liệu
+*.csv
+*.xlsx
+*.doc
+*.docx
+*.pdf
+
+# Bỏ qua các file khác
+*.zip
+*.rar
+*.gz
+*.tar
+*.7z
+*.exe
+*.dll
+*.so
+*.dylib
+
+# AI Agents ignore
+.claude/
+.agents/
+.agent/
+.vscode/
+.codex/
+.qwen/
+.kilo/
+.gemini/
+GEMINI.md
+AGENTS.md
+AGENT.md
+CLAUDE.md
+QWEN.md
+
+plans/
+repomix-output.xml
