@@ -2,7 +2,7 @@
 
 **Static analysis for React/Next.js — built for AI agents and developers who need to understand frontend code without running it.**
 
-[![npm version](https://img.shields.io/npm/v/traceui)](https://www.npmjs.com/package/traceui)
+[![npm version](https://img.shields.io/npm/v/traceui-mcp)](https://www.npmjs.com/package/traceui-mcp)
 [![license](https://img.shields.io/badge/license-MIT-blue)](./LICENSE)
 [![tests](https://img.shields.io/badge/tests-128%20passing-brightgreen)](./tests)
 [![typescript](https://img.shields.io/badge/TypeScript-5.3-blue)](./tsconfig.json)
@@ -81,9 +81,19 @@ traceui analyze src/components/OrderList.js
 ## Installation
 
 ```bash
+# Via npx (no install needed)
+npx traceui-mcp
+
+# Or install globally
+npm install -g traceui-mcp
+```
+
+### Local development
+
+```bash
 # Clone
-git clone https://github.com/your-org/traceui.git
-cd traceui
+git clone https://github.com/philau2512/traceui-mcp.git
+cd traceui-mcp
 
 # Install dependencies
 npm install
@@ -122,8 +132,8 @@ TraceUI ships an [MCP](https://modelcontextprotocol.io) server with 2 tools that
 {
   "mcpServers": {
     "traceui": {
-      "command": "node",
-      "args": ["/absolute/path/to/traceui/dist/mcp/index.js"]
+      "command": "npx",
+      "args": ["-y", "traceui-mcp@latest"]
     }
   }
 }
@@ -216,8 +226,6 @@ src/
 |---|---|---|
 | v0.1 | ✅ Done | Single file analysis, states, effects, API calls |
 | v0.2 | ✅ Done | Custom hook resolution, MCP server, alias resolution, `used_by` |
-| v0.3 | 🔄 Planned | Cross-file analysis, service layer resolution |
-| v1.0 | 🔄 Planned | VSCode extension, React Query support |
 
 ---
 
@@ -226,8 +234,8 @@ src/
 Contributions are welcome. Here's how to get started:
 
 ```bash
-git clone https://github.com/your-org/traceui.git
-cd traceui
+git clone https://github.com/philau2512/traceui-mcp.git
+cd traceui-mcp
 npm install
 npm run build
 npm test          # 128 tests via Vitest

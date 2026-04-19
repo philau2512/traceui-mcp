@@ -34,15 +34,18 @@
     "component-analysis",
     "ast"
   ],
-  "author": "",
+  "author": "philau2512",
   "license": "MIT",
-  "homepage": "https://github.com/your-org/traceui#readme",
+  "homepage": "https://github.com/philau2512/traceui-mcp#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-org/traceui.git"
+    "url": "https://github.com/philau2512/traceui-mcp.git"
   },
   "bugs": {
-    "url": "https://github.com/your-org/traceui/issues"
+    "url": "https://github.com/philau2512/traceui-mcp/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "engines": {
     "node": ">=18"
